@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_choose_role_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/f_user_info_iv"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        app:layout_constraintStart_toStartOf="@+id/gl_start"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_name"
+        style="@style/Theme.TestAppRandomUser.TextAppearance.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_24"
+        app:layout_constraintEnd_toEndOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_iv"
+        app:layout_constraintTop_toTopOf="@+id/f_user_info_iv"
+        tools:text="User Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_gender_title"
+        style="@style/Theme.TestAppRandomUser.TextAppearance.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_8"
+        android:text="@string/gender"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_iv"
+        app:layout_constraintTop_toBottomOf="@+id/f_user_info_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_gender_value"
+        style="@style/Theme.TestAppRandomUser.TextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_8"
+        app:layout_constraintBottom_toBottomOf="@+id/f_user_info_gender_title"
+        app:layout_constraintEnd_toEndOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_gender_title"
+        app:layout_constraintTop_toTopOf="@+id/f_user_info_gender_title"
+        tools:text="female" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_username_title"
+        style="@style/Theme.TestAppRandomUser.TextAppearance.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_8"
+        android:text="@string/username"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_iv"
+        app:layout_constraintTop_toBottomOf="@+id/f_user_info_gender_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_username_value"
+        style="@style/Theme.TestAppRandomUser.TextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_8"
+        app:layout_constraintBottom_toBottomOf="@+id/f_user_info_username_title"
+        app:layout_constraintEnd_toEndOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_username_title"
+        app:layout_constraintTop_toTopOf="@+id/f_user_info_username_title"
+        tools:text="silvergorilla125" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_email_title"
+        style="@style/Theme.TestAppRandomUser.TextAppearance.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_8"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="@+id/gl_start"
+        app:layout_constraintTop_toBottomOf="@+id/f_user_info_iv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_email_value"
+        style="@style/Theme.TestAppRandomUser.TextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_8"
+        app:layout_constraintBottom_toBottomOf="@+id/f_user_info_email_title"
+        app:layout_constraintEnd_toEndOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_email_title"
+        app:layout_constraintTop_toTopOf="@+id/f_user_info_email_title"
+        tools:text="johanne.madsen@example.com" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_phone_title"
+        style="@style/Theme.TestAppRandomUser.TextAppearance.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_8"
+        android:text="@string/phone"
+        app:layout_constraintStart_toStartOf="@+id/gl_start"
+        app:layout_constraintTop_toBottomOf="@+id/f_user_info_email_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/f_user_info_phone_value"
+        style="@style/Theme.TestAppRandomUser.TextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_8"
+        app:layout_constraintBottom_toBottomOf="@+id/f_user_info_phone_title"
+        app:layout_constraintEnd_toEndOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/f_user_info_phone_title"
+        app:layout_constraintTop_toTopOf="@+id/f_user_info_phone_title"
+        tools:text="50999281" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

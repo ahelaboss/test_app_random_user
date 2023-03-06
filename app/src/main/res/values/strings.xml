@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestAppRandomUser</string>
+    <string name="history">History</string>
+    <string name="input_count_users">Input count users</string>
+    <string name="get_users">Get users</string>
+    <string name="gender">Gender:</string>
+    <string name="email">Email:</string>
+    <string name="username">Username:</string>
+    <string name="phone">Phone:</string>
+</resources>

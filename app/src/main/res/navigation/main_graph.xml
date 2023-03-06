@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.yourgains.testapprandomuser.presentation.main.fragment.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_usersFragment"
+            app:destination="@id/usersFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.yourgains.testapprandomuser.presentation.main.fragment.UsersFragment"
+        android:label="UsersFragment"
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/action_usersFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.yourgains.testapprandomuser.presentation.main.fragment.HistoryFragment"
+        android:label="HistoryFragment"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_historyFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.yourgains.testapprandomuser.presentation.main.fragment.UserInfoFragment"
+        android:label="UserInfoFragment"
+        tools:layout="@layout/fragment_user_info">
+
+        <argument
+            android:name="user"
+            app:argType="com.yourgains.testapprandomuser.data.entity.presentation.UserUI" />
+    </fragment>
+</navigation>
